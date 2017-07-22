@@ -1,9 +1,6 @@
 package hello.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Category {
@@ -11,10 +8,13 @@ public class Category {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
 
+  @Column(name = "categoryId")
   private Long categoryId;
 
+  @Column(name = "categoryName")
   private String categoryName;
 
+  @Column(name = "imageId")
   private Double imageId;
 
   public Long getCategoryId() {
