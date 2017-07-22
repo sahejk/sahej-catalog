@@ -8,14 +8,10 @@ public class Category {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-
-  @Column(name = "categoryid")
   private Long categoryId;
 
-  @Column(name = "categoryname")
   private String categoryName;
 
-  @Column(name = "imageid")
   private Double imageId;
 
   public Long getCategoryId() {
