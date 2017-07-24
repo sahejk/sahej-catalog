@@ -1,3 +1,4 @@
 build/classes/
 .idea/
 .idea/workspace.xml
+build/classes/main/hello/models/*

@@ -1,6 +1,9 @@
 package hello.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name = "category")
@@ -36,5 +39,17 @@ public class Category {
 
   public void setImageId(Double imageId) {
     this.imageId = imageId;
+  }
+
+  @JsonIgnore
+  @OneToMany(cascade = CascadeType.ALL, mappedBy = "category",fetch = FetchType.LAZY, targetEntity = Product.class)
+  private Set<Product> products;
+
+  public Set<Product> getProducts() {
+    return products;
+  }
+
+  public void setProducts(Set<Product> products) {
+    this.products = products;
   }
 }
