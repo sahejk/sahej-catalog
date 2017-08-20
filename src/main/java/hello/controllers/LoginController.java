@@ -1,5 +1,6 @@
 package hello.controllers;
 
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -20,7 +21,14 @@ public class LoginController {
   }
   @RequestMapping(value = "/v2/login", method = RequestMethod.POST)
   public ResponseEntity<String> loginV2() {
-    return new ResponseEntity<>("{\"status\":{\"code\":1000,\"description\":\"Success\"},\"data\":{\"userId\":\"001400000000000000000023420506\",\"userStatus\":\"P\",\"cardId\":\"2559101200129\",\"cardType\":\"P1\",\"countryCode\":null,\"userType\":\"21\",\"segment\":null,\"titleTH\":\"???\",\"nameTH\":\"????????????\",\"middleNameTH\":\"\",\"lastNameTH\":\"????????\",\"titleEN\":\"MR.\",\"nameEN\":\"CITIZENXIII\",\"middleNameEN\":\"\",\"lastNameEN\":\"ONLY\",\"email\":null,\"registerDate\":\"2017-01-04T00:00:00.000-0500\",\"tcAcceptDate\":\"2017-02-13\",\"promptpayTcAcceptDate\":null,\"tcAcceptVersion\":2,\"promptpayTcAcceptVersion\":null,\"language\":\"en\",\"maskAccountFlag\":1,\"profilePhotoPath\":\"/media/images/7990cc76ea6f49a29bd8626b1b73da3c\",\"mobileNo\":\"0915556666\",\"buzzebeeBaseURL\":\"https://fasteasy.scbeasy.com:8463/buzzebees/home.aspx?hash=\",\"emailNotificationFlag\":\"0\",\"bulkActivateDate\":null,\"mutualFundTcAcceptDate\":null,\"mutualFundTcAcceptVersion\":0}}", HttpStatus.OK);
+    HttpHeaders headers = new HttpHeaders();
+//    Headers ["Api-Refresh": "9640ac70-8534-485e-b1f8-0e91778e698b", "Content-Length": "479", "channelid": "ENET", "Access-Control-Expose-Headers": "Api-Auth,Api-Refresh", "correlationid": "5e64e842-c849-4f5d-94d6-5289104b8b57", "expiration_at": "1503139397", "Content-Type": "application/json;charset=UTF-8", "Connection": "keep-alive", "X-Application-Context": "zuul-server:dev4:7001", "Accept-Language": "en", "Api-Auth": "9bba44f7-28a5-4be5-b278-2f8019ed65dd", "Server": "SCB", "Content-Encoding": "gzip", "Date": "Sat, 19 Aug 2017 09:43:16 GMT"]
+    headers.add("Api-Auth","9bba44f7-28a5-4be5-b278-2f8019ed65dd");
+    headers.add("expiration_at","1503139397");
+    headers.add("correlationid","5e64e842-c849-4f5d-94d6-5289104b8b57");
+    headers.add("Api-Refresh","9640ac70-8534-485e-b1f8-0e91778e698b");
+    ResponseEntity<String> stringResponseEntity = new ResponseEntity<>("{\"status\":{\"code\":1000,\"description\":\"Success\"},\"data\":{\"userId\":\"001400000000000000000023420506\",\"userStatus\":\"P\",\"cardId\":\"2559101200129\",\"cardType\":\"P1\",\"countryCode\":null,\"userType\":\"21\",\"segment\":null,\"titleTH\":\"???\",\"nameTH\":\"????????????\",\"middleNameTH\":\"\",\"lastNameTH\":\"????????\",\"titleEN\":\"MR.\",\"nameEN\":\"CITIZENXIII\",\"middleNameEN\":\"\",\"lastNameEN\":\"ONLY\",\"email\":null,\"registerDate\":\"2017-01-04T00:00:00.000-0500\",\"tcAcceptDate\":\"2017-02-13\",\"promptpayTcAcceptDate\":null,\"tcAcceptVersion\":2,\"promptpayTcAcceptVersion\":null,\"language\":\"en\",\"maskAccountFlag\":1,\"profilePhotoPath\":\"/media/images/7990cc76ea6f49a29bd8626b1b73da3c\",\"mobileNo\":\"0915556666\",\"buzzebeeBaseURL\":\"https://fasteasy.scbeasy.com:8463/buzzebees/home.aspx?hash=\",\"emailNotificationFlag\":\"0\",\"bulkActivateDate\":null,\"mutualFundTcAcceptDate\":null,\"mutualFundTcAcceptVersion\":0}}",headers, HttpStatus.OK);
+    return stringResponseEntity;
   }
   @RequestMapping(value = "/v3/profiles/tiles", method = RequestMethod.GET)
   public ResponseEntity<String> tiles() {
