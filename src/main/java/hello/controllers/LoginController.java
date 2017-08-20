@@ -11,6 +11,115 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController {
 
+  @RequestMapping(value = "/v1/cc-reward-redemption/rewards", method = RequestMethod.GET)
+  public ResponseEntity<String> categories() {
+    return new ResponseEntity<>("{\n" +
+      "    \"status\": {\n" +
+      "        \"code\": \"1000\",\n" +
+      "        \"description\": \"description\"\n" +
+      "    },\n" +
+      "    \"data\": {\n" +
+      "        \"categories\": [\n" +
+      "            {\n" +
+      "                \"id\": 1,\n" +
+      "                \"name\": \"Health\",\n" +
+      "                \"description\": \"category description\",\n" +
+      "                \"priority\": 1,\n" +
+      "                \"activated\": true,\n" +
+      "                \"code\": \"HEALTH\",\n" +
+      "                \"lastUpdated\": {\n" +
+      "                    \"hour\": 13,\n" +
+      "                    \"minute\": 52,\n" +
+      "                    \"second\": 15,\n" +
+      "                    \"nano\": 430000000,\n" +
+      "                    \"dayOfYear\": 229,\n" +
+      "                    \"dayOfWeek\": \"THURSDAY\",\n" +
+      "                    \"month\": \"AUGUST\",\n" +
+      "                    \"dayOfMonth\": 17,\n" +
+      "                    \"year\": 2017,\n" +
+      "                    \"monthValue\": 8,\n" +
+      "                    \"chronology\": {\n" +
+      "                        \"id\": \"ISO\",\n" +
+      "                        \"calendarType\": \"iso8601\"\n" +
+      "                    }\n" +
+      "                }\n" +
+      "            },\n" +
+      "            {\n" +
+      "                \"id\": 2,\n" +
+      "                \"name\": \"Travel\",\n" +
+      "                \"description\": \"category description\",\n" +
+      "                \"priority\": 2,\n" +
+      "                \"activated\": true,\n" +
+      "                \"code\": \"TRAVEL\",\n" +
+      "                \"lastUpdated\": {\n" +
+      "                    \"hour\": 13,\n" +
+      "                    \"minute\": 52,\n" +
+      "                    \"second\": 15,\n" +
+      "                    \"nano\": 430000000,\n" +
+      "                    \"dayOfYear\": 229,\n" +
+      "                    \"dayOfWeek\": \"THURSDAY\",\n" +
+      "                    \"month\": \"AUGUST\",\n" +
+      "                    \"dayOfMonth\": 17,\n" +
+      "                    \"year\": 2017,\n" +
+      "                    \"monthValue\": 8,\n" +
+      "                    \"chronology\": {\n" +
+      "                        \"id\": \"ISO\",\n" +
+      "                        \"calendarType\": \"iso8601\"\n" +
+      "                    }\n" +
+      "                }\n" +
+      "            },\n" +
+      "            {\n" +
+      "                \"id\": 4,\n" +
+      "                \"name\": \"Voucher\",\n" +
+      "                \"description\": \"category description\",\n" +
+      "                \"priority\": 4,\n" +
+      "                \"activated\": true,\n" +
+      "                \"code\": \"VOUCHER\",\n" +
+      "                \"lastUpdated\": {\n" +
+      "                    \"hour\": 13,\n" +
+      "                    \"minute\": 52,\n" +
+      "                    \"second\": 15,\n" +
+      "                    \"nano\": 430000000,\n" +
+      "                    \"dayOfYear\": 229,\n" +
+      "                    \"dayOfWeek\": \"THURSDAY\",\n" +
+      "                    \"month\": \"AUGUST\",\n" +
+      "                    \"dayOfMonth\": 17,\n" +
+      "                    \"year\": 2017,\n" +
+      "                    \"monthValue\": 8,\n" +
+      "                    \"chronology\": {\n" +
+      "                        \"id\": \"ISO\",\n" +
+      "                        \"calendarType\": \"iso8601\"\n" +
+      "                    }\n" +
+      "                }\n" +
+      "            },\n" +
+      "            {\n" +
+      "                \"id\": 3,\n" +
+      "                \"name\": \"House Appliance\",\n" +
+      "                \"description\": \"category description\",\n" +
+      "                \"priority\": 5,\n" +
+      "                \"activated\": true,\n" +
+      "                \"code\": \"HOUSE_APPLIANCE\",\n" +
+      "                \"lastUpdated\": {\n" +
+      "                    \"hour\": 13,\n" +
+      "                    \"minute\": 52,\n" +
+      "                    \"second\": 15,\n" +
+      "                    \"nano\": 430000000,\n" +
+      "                    \"dayOfYear\": 229,\n" +
+      "                    \"dayOfWeek\": \"THURSDAY\",\n" +
+      "                    \"month\": \"AUGUST\",\n" +
+      "                    \"dayOfMonth\": 17,\n" +
+      "                    \"year\": 2017,\n" +
+      "                    \"monthValue\": 8,\n" +
+      "                    \"chronology\": {\n" +
+      "                        \"id\": \"ISO\",\n" +
+      "                        \"calendarType\": \"iso8601\"\n" +
+      "                    }\n" +
+      "                }\n" +
+      "            }\n" +
+      "        ]\n" +
+      "    }\n" +
+      "}", HttpStatus.OK);
+  }
   @RequestMapping(value = "/v3/creditcards/summary", method = RequestMethod.POST)
   public ResponseEntity<String> creditCards() {
     return new ResponseEntity<>("{\"status\":{\"code\":\"1000\",\"description\":\"Success\"},\"cardList\":[{\"status\":{\"code\":\"1000\",\"description\":\"Success\"},\"sortSequence\":0,\"productType\":{\"code\":\"VSAPLS\",\"description\":\"Sansiri Platinum \"},\"cardStatus\":{\"code\":\"normal\",\"description\":\"Normal Card\"},\"stmtDueDate\":\"2017-08-11T00:00:00.000+07:00\",\"lastPaymentDate\":\"2017-08-11T00:00:00.000+07:00\",\"currency\":\"764\",\"paymentStatus\":{\"code\":\"UNPAID\",\"description\":\"UNPAID\"},\"paymentAmount\":0.00,\"cardRefNo\":\"4773769908949262\",\"creditcardimageURL\":\"/creditcard/Visa/VSAPLS.png\",\"referenceName\":\"Accenture-Fa EASY60\",\"stmtDueAmount\":3111,\"creditUsed\":3111,\"stmtMinDueAmount\":500,\"creditLimit\":500000,\"availableCredit\":496889,\"currentDueAmount\":3111.00}]}", HttpStatus.OK);
