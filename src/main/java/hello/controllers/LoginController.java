@@ -93,6 +93,30 @@ public class LoginController {
       "                }\n" +
       "            },\n" +
       "            {\n" +
+      "                \"id\": 5,\n" +
+      "                \"name\": \"KIDS AND TOY\",\n" +
+      "                \"description\": \"category description\",\n" +
+      "                \"priority\": 4,\n" +
+      "                \"activated\": true,\n" +
+      "                \"code\": \"TOY\",\n" +
+      "                \"lastUpdated\": {\n" +
+      "                    \"hour\": 13,\n" +
+      "                    \"minute\": 52,\n" +
+      "                    \"second\": 15,\n" +
+      "                    \"nano\": 430000000,\n" +
+      "                    \"dayOfYear\": 229,\n" +
+      "                    \"dayOfWeek\": \"THURSDAY\",\n" +
+      "                    \"month\": \"AUGUST\",\n" +
+      "                    \"dayOfMonth\": 17,\n" +
+      "                    \"year\": 2017,\n" +
+      "                    \"monthValue\": 8,\n" +
+      "                    \"chronology\": {\n" +
+      "                        \"id\": \"ISO\",\n" +
+      "                        \"calendarType\": \"iso8601\"\n" +
+      "                    }\n" +
+      "                }\n" +
+      "            },\n" +
+      "            {\n" +
       "                \"id\": 3,\n" +
       "                \"name\": \"House Appliance\",\n" +
       "                \"description\": \"category description\",\n" +
