@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController {
 
-  @RequestMapping(value = "/v1/cc-reward-redemption/rewards", method = RequestMethod.GET)
+  @RequestMapping(value = "/v1/cc-reward-redemption/categories", method = RequestMethod.GET)
   public ResponseEntity<String> categories() {
     return new ResponseEntity<>("{\n" +
       "    \"status\": {\n" +
