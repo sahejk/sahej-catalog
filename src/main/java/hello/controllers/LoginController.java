@@ -26,7 +26,7 @@ public class LoginController {
       "                \"description\": \"category description\",\n" +
       "                \"priority\": 1,\n" +
       "                \"activated\": true,\n" +
-      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503307846/catalogue/HEALTH.png\",\n" +
+      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503314778/catalogue/HEALTH.png\",\n" +
       "                \"code\": \"HEALTH\",\n" +
       "                \"lastUpdated\": {\n" +
       "                    \"hour\": 13,\n" +
@@ -51,7 +51,7 @@ public class LoginController {
       "                \"description\": \"category description\",\n" +
       "                \"priority\": 2,\n" +
       "                \"activated\": true,\n" +
-      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503307847/catalogue/TRAVEL.png\",\n" +
+      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503314778/catalogue/TRAVEL.png\",\n" +
       "                \"code\": \"TRAVEL\",\n" +
       "                \"lastUpdated\": {\n" +
       "                    \"hour\": 13,\n" +
@@ -73,7 +73,7 @@ public class LoginController {
       "            {\n" +
       "                \"id\": 4,\n" +
       "                \"name\": \"Voucher\",\n" +
-      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503307846/catalogue/VOUCHER.png\",\n" +
+      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503314778/catalogue/VOUCHER.png\",\n" +
       "                \"description\": \"category description\",\n" +
       "                \"priority\": 4,\n" +
       "                \"activated\": true,\n" +
@@ -122,7 +122,7 @@ public class LoginController {
       "            },\n" +
       "            {\n" +
       "                \"id\": 3,\n" +
-      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503307846/catalogue/HOUSE_APPLIANCE.png\",\n" +
+      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503314778/catalogue/HOUSE_APPLIANCE.png\",\n" +
       "                \"name\": \"House Appliance\",\n" +
       "                \"description\": \"category description\",\n" +
       "                \"priority\": 5,\n" +
