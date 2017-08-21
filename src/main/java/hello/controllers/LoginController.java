@@ -21,31 +21,6 @@ public class LoginController {
       "    \"data\": {\n" +
       "        \"categories\": [\n" +
       "            {\n" +
-      "                \"id\": 1,\n" +
-      "                \"name\": \"Health\",\n" +
-      "                \"description\": \"category description\",\n" +
-      "                \"priority\": 1,\n" +
-      "                \"activated\": true,\n" +
-      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503314778/catalogue/HEALTH.png\",\n" +
-      "                \"code\": \"HEALTH\",\n" +
-      "                \"lastUpdated\": {\n" +
-      "                    \"hour\": 13,\n" +
-      "                    \"minute\": 52,\n" +
-      "                    \"second\": 15,\n" +
-      "                    \"nano\": 430000000,\n" +
-      "                    \"dayOfYear\": 229,\n" +
-      "                    \"dayOfWeek\": \"THURSDAY\",\n" +
-      "                    \"month\": \"AUGUST\",\n" +
-      "                    \"dayOfMonth\": 17,\n" +
-      "                    \"year\": 2017,\n" +
-      "                    \"monthValue\": 8,\n" +
-      "                    \"chronology\": {\n" +
-      "                        \"id\": \"ISO\",\n" +
-      "                        \"calendarType\": \"iso8601\"\n" +
-      "                    }\n" +
-      "                }\n" +
-      "            },\n" +
-      "            {\n" +
       "                \"id\": 2,\n" +
       "                \"name\": \"Travel\",\n" +
       "                \"description\": \"category description\",\n" +
@@ -78,31 +53,6 @@ public class LoginController {
       "                \"priority\": 4,\n" +
       "                \"activated\": true,\n" +
       "                \"code\": \"VOUCHER\",\n" +
-      "                \"lastUpdated\": {\n" +
-      "                    \"hour\": 13,\n" +
-      "                    \"minute\": 52,\n" +
-      "                    \"second\": 15,\n" +
-      "                    \"nano\": 430000000,\n" +
-      "                    \"dayOfYear\": 229,\n" +
-      "                    \"dayOfWeek\": \"THURSDAY\",\n" +
-      "                    \"month\": \"AUGUST\",\n" +
-      "                    \"dayOfMonth\": 17,\n" +
-      "                    \"year\": 2017,\n" +
-      "                    \"monthValue\": 8,\n" +
-      "                    \"chronology\": {\n" +
-      "                        \"id\": \"ISO\",\n" +
-      "                        \"calendarType\": \"iso8601\"\n" +
-      "                    }\n" +
-      "                }\n" +
-      "            },\n" +
-      "            {\n" +
-      "                \"id\": 5,\n" +
-      "\t\t\"imageURL\": \"https://res.cloudinary.com/dh8cnckcf/image/upload/v1503307846/catalogue/TOY.png\",\n" +
-      "                \"name\": \"KIDS AND TOY\",\n" +
-      "                \"description\": \"category description\",\n" +
-      "                \"priority\": 4,\n" +
-      "                \"activated\": true,\n" +
-      "                \"code\": \"TOY\",\n" +
       "                \"lastUpdated\": {\n" +
       "                    \"hour\": 13,\n" +
       "                    \"minute\": 52,\n" +
